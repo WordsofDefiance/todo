@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Todo List App</title>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
