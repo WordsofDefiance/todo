@@ -1,10 +1,10 @@
 <?php
 
 try {
-    $myPDO = new PDO('mysql:host=localhost;dbname=todo', 'root', '');
+    $myPDO = new PDO('mysql:host=127.0.0.1;dbname=todo', 'david', 'david');
     $myPDO->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e)  {
-    echo "unable to connect!";
+    echo "unable to connect!<br>";
     echo $e->getMessage();
     exit;
 }
