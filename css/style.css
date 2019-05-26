@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+  font-family: Helvetica, sans-serif; }
+
+input[type="text"] {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 5px; }
+
+input[type="text"]:focus {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid green; }
+
+/*# sourceMappingURL=style.css.map */
