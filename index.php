@@ -71,5 +71,20 @@
     </table>
 </form>
 
+<h3>Add A User</h3>
+<form action="actions/addauser.php" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Username</td>
+                <td><input type="text" name="username"></label></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add User"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
 </body>
 </html> 
