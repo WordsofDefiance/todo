@@ -41,5 +41,5 @@ $results = $username_join->fetchAll(PDO::FETCH_ASSOC); ?>
         <?php $counter++; ?>
     <?php }
 } else {
-    echo "Your username does not exist!";
+    echo "Your username does not exist or this user has no tasks!";
 }
