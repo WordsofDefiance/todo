@@ -1,10 +1,16 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: red;
+$font-stack: 'Quicksand', sans-serif;
+$primary-color: black;
 
+body {
+    background-color: #fafafa;
+    font-size: 18px;
+    font-family: $font-stack;
+}
 
 h1 {
     color: $primary-color;
     font-family: $font-stack;
+    font-size: 2.5em;
 }
 
 input[type="text"] {
@@ -17,3 +23,22 @@ input[type="text"]:focus {
     box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
     border: 1px solid green;
 }
+
+input[type="submit"] {
+    font-size: 0.7em;
+    border-radius: 5px;
+    padding: 0.3em 1em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.shadow-drop-center {
+    box-shadow: 0 0 0 0;
+	transition: 0.3s ease-in;
+}   
+
+.shadow-drop-center:hover {
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.35);
+}
+

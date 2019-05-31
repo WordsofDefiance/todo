@@ -2,7 +2,8 @@
 <html>
 <head>
 <title>Todo List App</title>
-<link rel="stylesheet" href="./sass/style.scss">
+<link rel="stylesheet" href="./css/style.min.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 <td><input type="text" name="username"></label></td>
 </tr>
 <tr><td>
-<input type="submit" value="Fetch Tasks">
+<input class="shadow-drop-center" type="submit" value="Fetch Tasks">
 </td></tr>
 </tbody>
 </table>
@@ -42,7 +43,7 @@
                 <td><input type="text" name="taskdescription"></label></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Add Task"></td>
+                <td><input class="shadow-drop-center" type="submit" value="Add Task"></td>
             </tr>
         </tbody>
     </table>

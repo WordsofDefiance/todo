@@ -1,26 +1,36 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "description": "this is the todo app",
+  "description": "Todo app -- installing SASS",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WordsofDefiance/todo.git"
-  },
   "keywords": [
-    "todo",
-    "app",
-    "php",
+    "gulp",
     "sass",
-    "gulp"
+    "css"
   ],
-  "author": "david accomazzo",
+  "author": "David Accomazzo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WordsofDefiance/todo/issues"
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-include": "^2.3.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1"
   },
-  "homepage": "https://github.com/WordsofDefiance/todo#readme"
+  "dependencies": {
+    "dev": "^0.1.3",
+    "gulp-postcss": "^8.0.0"
+  }
 }

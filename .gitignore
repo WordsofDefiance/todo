@@ -1,2 +1,6 @@
 *.log
 phpinfo.php
+node_modules
+gulpfile.js.old
+package.json.old
+.gitignore
