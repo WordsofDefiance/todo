@@ -4,8 +4,6 @@ $username = trim( $_GET['username'] );
 
 $username = filter_var( $username, FILTER_SANITIZE_SPECIAL_CHARS);
 
-//echo $username;
-
 include '../includes/connection.php';
 
 try {
@@ -33,10 +31,10 @@ $results = $username_join->fetchAll(PDO::FETCH_ASSOC); ?>
         <div class="tasklist counter">
             <h2>Task <?php echo $counter; ?></h2>
         </div>
-        <div class="tasklist task">
-            <h3><?php echo $result['task_name']; ?></h3>
-            <p><?php echo $result['task_description']; ?></p>
-            <p><?php echo $result['complete'] == 0 ?  $incompleteMessage : $completeMessage; ?></p>
+        <div data-taskid="<?php echo $result['task_id'];?>"  data-complete="<?php echo $result['complete']; ?>" class="tasklist task">
+            <h3 class="task-name"><?php echo $result['task_name']; ?></h3>
+            <p class="task-description"><?php echo $result['task_description']; ?></p>
+            <p class="task-complete"><input type="checkbox"></input><?php echo $result['complete'] == 0 ?  $incompleteMessage : $completeMessage; ?></p>
         </div>
         <?php $counter++; ?>
     <?php }

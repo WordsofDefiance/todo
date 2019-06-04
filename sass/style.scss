@@ -57,7 +57,8 @@ input[type="submit"] {
 	        animation: focus-in-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.shadow-pop:hover {
+.shadow-pop:hover,
+.shadow-pop:focus {
 	 box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e;
     -webkit-transform: translateX(4px) translateY(4px);
             transform: translateX(4px) translateY(4px);
